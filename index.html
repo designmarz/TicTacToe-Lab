@@ -8,33 +8,35 @@
 	<title>Tic Tac Toe!</title>
 </head>
 <body>
-	<div class="bigText"><h1>Tic Tac Toe Game</h1>
-	<p>lets see who will win!</p>
-	</div>
+	<div class="bigText"><h1>Tic<br>Tac<br>Toe</h1>
+		
+		<!-- <div id="playTurn"><h2>It's Player X's Turn!</h2></div> -->
+	</div>	
+
 	
-<div class="board">
-	<div class="row">
-<div id="box1" class="box"></div>
-<div id="box2" class="box"></div>
-<div id="box3" class="box"></div>
-</div>
-	<div class="row">
-<div id="box4" class="box"></div>
-<div id="box5" class="box"></div>
-<div id="box6" class="box"></div>
-</div>
-	<div class="row">
-<div id="box7" class="box"></div>
-<div id="box8" class="box"></div>
-<div id="box9" class="box"></div>
-</div>
-</div>	
+	<div class="board">
+		<div class="row">
+			<div id="box1" class="box"></div>
+			<div id="box2" class="box"></div>
+			<div id="box3" class="box"></div>
+		</div>
+		<div class="row">
+			<div id="box4" class="box"></div>
+			<div id="box5" class="box"></div>
+			<div id="box6" class="box"></div>
+		</div>
+		<div class="row">
+			<div id="box7" class="box"></div>
+			<div id="box8" class="box"></div>
+			<div id="box9" class="box"></div>
+		</div>
+	</div>	
 
 
-<div class="controlBox">
-	<button  value="Reset" onClick="resetBoard"/>Reset</button>
-
-</div>
-<script src="app.js"></script>
+	<div class="controlBox">
+	<input type ="button"  class="Reset" onClick="resetBoard(0)" value="Reset"/>
+	<input type="text" class="player" id="player" value="X">
+	</div>
+	<script src="app.js"></script>
 </body>
 </html>

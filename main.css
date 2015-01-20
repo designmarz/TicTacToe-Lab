@@ -1,3 +1,8 @@
+.bigText {
+	float: left;
+	text-align: center;	
+}
+
 div.board {
 	width: 600px;
 	height: 600px;
@@ -19,29 +24,33 @@ div.box {
 .row {
 	display: flex;
 }
-input {
-width: 200px;
-height: 200px;
-}
 
 .controlBox {
 	border: 1px solid #000;
-	height: 20px;
+	height: 125px;
 	width: 125px;
 	background-color: #f2f2f2;
 	float: left;
 	position: absolute;
 	bottom: 15%;
-	left: 10px;
+	left: 20px;
 }
 
-/*.rButton {
-	width: 150px;
-	height: 70px;
-	background-color: #f2f2f2;
-}*/
+input.Reset {
+	width: 80%;
+	margin-top: 10px;	
+	margin-left: 10%;
+	margin-right: 10%;
 
-.bigText {
-	float: left;
-	text-align: left;	
 }
+
+input.player {
+	width: 50%;
+	height: 56px;
+	text-align: center;
+	font-size: 34pt;
+	margin-left: 24%;
+	margin-right: 24%;
+	margin-top: 10px;
+}
+
