@@ -14,10 +14,12 @@
 	var box9 = document.getElementById("box9");
 
 // Need for win Condition: Not working //
+	function winCheck(){
 	var boardLayout = [
 	[box1.innerHTML, box2.innerHTML, box3.innerHTML],
 	[box4.innerHTML, box5.innerHTML, box6.innerHTML],
 	[box7.innerHTML, box8.innerHTML, box9.innerHTML]];
+			}
 
 // Adding Click Events to box's //
 	var boxes = document.getElementsByClassName("box");
@@ -26,7 +28,7 @@
 
 	}
 
-// Player Tracker & PLayer Marker //
+// Player Tracker & Player Marker //
 	function clickBox(e) {
 
 		playTracker += 1;
@@ -34,14 +36,17 @@
 			event.target.innerHTML = "O";
 			player = "X";
 			document.getElementById("player").value = "X";
-
+			document.getElementById("player").style.backgroundColor = "#66FF33";
+			event.target.style.backgroundColor = "#3399FF";
 		}
 		else {
 			event.target.innerHTML = "X";
 			player = "0";
 			document.getElementById("player").value = "O";
+			document.getElementById("player").style.backgroundColor = "#3399FF";
+			event.target.style.backgroundColor = "#66FF33";
 		}
-		event.target.style.backgroundColor = "gray";
+		
 		event.target.removeEventListener("click", clickBox );
 	}
 
@@ -51,10 +56,13 @@ function resetBoard (e) {
 		boxes[i].innerHTML = " ";
 		boxes[i].style.backgroundColor = "#f2f2f2";
 		boxes[i].addEventListener("click", clickBox);
+		document.getElementById("player").style.backgroundColor = "#66FF33";
 		document.getElementById("player").value = "X";
 		playTracker = 0;
 
 	}
 
 }
+// set defualt color //
+document.getElementById("player").style.backgroundColor = "#66FF33";
 console.log("Game Load");

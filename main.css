@@ -7,6 +7,7 @@ div.board {
 	width: 600px;
 	height: 600px;
 	margin: auto;
+	margin-top: 30px;
 }
 
 div.box {
@@ -19,7 +20,9 @@ div.box {
 	font-family: sans-serif;
 	font-weight: bold;
 }
-
+div.box:hover {
+background-color: #555;
+}
 
 .row {
 	display: flex;
