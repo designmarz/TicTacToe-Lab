@@ -27,13 +27,15 @@ div.box {
 
 .controlBox {
 	border: 1px solid #000;
-	height: 125px;
+	height: 145px;
 	width: 125px;
 	background-color: #f2f2f2;
 	float: left;
 	position: absolute;
 	bottom: 15%;
 	left: 20px;
+	text-align: center;
+	padding-top: 10px;
 }
 
 input.Reset {
@@ -53,4 +55,11 @@ input.player {
 	margin-right: 24%;
 	margin-top: 10px;
 }
+h1 {
+font: 33pt sans-serif;
+padding-left: 35px;
+}
 
+h4 {
+margin-top: 10px;
+}
